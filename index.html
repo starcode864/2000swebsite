@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My 2000s Website!</title>
+<link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+   <marquee bgcolor="#0000FF" scrollamount="6">
+ <font color="#221C35" size="4"><b>S0ng 0f the d4y  Green Day - Boulevard Of Broken Dreams</b></font>
+   </marquee>
+<center>
+   <table border="3" cellpadding="10" cellspacing="5" width="800" height="600">
+
+    <tr align="center" height="150">
+    <td colspan="2" align="left" valign="top" bgcolor="purple" height="150">
+        <h1 style= "font-family: 'Courier New', Courier, monospace;" "margin-bottom: 10px;">Welcome To My Website Playa!</h1>  
+    <img src="https://i.ibb.co.com/35D6f52j/c75c456f306a69085cb2a9e17c9dd5d5.jpg" width="320" height="320">
+    </td>    
+</tr>
+</tr>
+
+<tr>
+  
+<td width="600" bgcolor="red" align="left" valign="top"> <h1 style="font-family: 'Courier New', Courier, monospace;">Under Construction</h1> 
+<b style="font-family: 'Courier New', Courier, monospace;">C0ding th1s th1ng in a low end laptop rn pr0lly g0nna be d0n3 in 2046</b>
+<br>   
+<br>
+<b>Currently Listening To <a href="https://www.youtube.com/watch?v=UCCyoocDxBA">My Chemical Romance - Helena</a> </b>
+<br>
+<br>
+<b>Wh1il3 your3 4ll bored r34d s0me <a href="https://globalcomix.com/browse/comics">c0mics</a> ig</b>
+</td>
+
+<td width="800" height="100" align="left" valign="top" bgcolor="gray">
+  <h1 style="font-family: 'Courier New', Courier, monospace;">Mood Right Now</h1>
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ21jMDVzZDBqNXE3cWQ3M2N2djZzZnhoMmV6dTA5a2RxcHJ6cXd0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fwlr0dAU8trXO/giphy.gif" width="320" height="320">  
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXowcHdpY29icTlkZDVzdTJ0MzFjc3UwN2RkNjU2MWJnZjFvdXI0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oxHQtFuNo6oLxb4FG/giphy.gif" width="320" height="320">
+</td>
+
+</tr>
+
+</table>
+</center>
+<style>
+    body {
+        background-image: url(https://i.ibb.co.com/zhzG4m06/4-MLy-NZ66-GSMUp7z49-Q8k3-K.jpg);
+    background-size: cover;
+    }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Countable/3.0.1/Countable.min.js"></script>
+<script>
+  // Simple pure JS snow effect
+  document.addEventListener("DOMContentLoaded", function() {
+    const snowContainer = document.createElement('div');
+    snowContainer.style.position = 'fixed';
+    snowContainer.style.top = '0';
+    snowContainer.style.left = '0';
+    snowContainer.style.width = '100vw';
+    snowContainer.style.height = '100vh';
+    snowContainer.style.pointerEvents = 'none';
+    snowContainer.style.zIndex = '9999';
+    document.body.appendChild(snowContainer);
+
+    function createFlake() {
+      const flake = document.createElement('div');
+      flake.innerHTML = '❄'; // You can change this to '*' or '.' if you want different styles
+      flake.style.position = 'absolute';
+      flake.style.color = '#FFF';
+      flake.style.textShadow = '0 0 5px rgba(255,255,255,0.8)';
+      flake.style.fontSize = Math.random() * 10 + 10 + 'px';
+      flake.style.left = Math.random() * 100 + 'vw';
+      flake.style.top = '-20px';
+      flake.style.opacity = Math.random();
+      flake.style.transition = 'transform 5s linear, opacity 5s linear';
+      
+      snowContainer.appendChild(flake);
+
+      setTimeout(() => {
+        flake.style.transform = `translateY(105vh) translateX(${Math.random() * 100 - 50}px)`;
+      }, 100);
+
+      setTimeout(() => {
+        flake.remove();
+      }, 5100);
+    }
+
+    // Controls how fast new snowflakes appear (lower number = more snow)
+    setInterval(createFlake, 30); 
+  });
+</script>
+
+
+</body>
+</html>
